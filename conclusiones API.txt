@@ -1,0 +1,42 @@
+================================================================================
+DOCUMENTO DE HALLAZGOS Y CONCLUSIONES - PRUEBAS A TRAVES DE API
+================================================================================
+
+METODOLOGÍA DE PRUEBAS
+--------------------------------------------------------------------------------
+Se utilizaron las herramientas y KARATE, apoyadas por Cucumber para 
+crear escenarios de prueba legibles. Este enfoque permitió simular a traves de api
+el comportamiento para poder crear usuarios, intentar crear usuario ya existente,
+login con credenciales correctas, y login con credenciales incorrectas.
+
+HALLAZGOS PRINCIPALES
+--------------------------------------------------------------------------------
+### Gestión de Usuarios
+- **Creación de Usuarios**:
+ Se confirmó que la API permite la creación de nuevos usuarios asignando correctamente
+ tokens de autenticación. La validación de la no duplicidad de usuarios se maneja adecuadamente.
+- **Manejo de Errores**: 
+La API retorna mensajes de error claros cuando se intenta registrar un usuario ya
+ existente, contribuyendo a la integridad de los datos y la experiencia del usuario.
+### Autenticación
+- **Login Correcto**: 
+Los usuarios pueden autenticarse con credenciales válidas y obtener tokens de autenticación,
+ esencial para el acceso a áreas restringidas.
+- **Credenciales Incorrectas**: 
+La API rechaza efectivamente los intentos de login con credenciales incorrectas,
+ asegurando que solo los usuarios autorizados obtengan acceso.
+
+ANÁLISIS Y CONCLUSIONES
+--------------------------------------------------------------------------------
+- **Seguridad y Manejo de Acceso**: 
+Los procedimientos de seguridad y manejo de acceso son adecuados, con mecanismos 
+robustos para otorgar o denegar acceso basados en la validez de las credenciales del usuario.
+- **Robustez de la Gestión de Usuarios**: 
+La funcionalidad de la API para gestionar usuarios es robusta, con una clara definición
+de procesos para situaciones normales y excepcionales.
+- **Potencial de Mejora**: 
+A pesar de que los escenarios básicos son manejados correctamente, es crucial la 
+mejora continua y la realización de pruebas regulares para prevenir la introducción
+de errores en futuras actualizaciones.
+
+================================================================================
