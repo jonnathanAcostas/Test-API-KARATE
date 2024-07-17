@@ -1,0 +1,18 @@
+{
+  "newUser": {
+    "username": "Smokefcc",
+    "password": "SmokeOk"
+  },
+  "existingUser": {
+    "username": "Smokefcc",
+    "password": "SmokeOk"
+  },
+  "correctLogin": {
+    "username": "Smokefcc",
+    "password": "SmokeOk"
+  },
+  "incorrectLogin": {
+    "username": "user",
+    "password": "wrongPassword"
+  }
+}
