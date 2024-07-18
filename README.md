@@ -37,3 +37,8 @@ El proyecto tiene como objetivo hacer pruebas unitarias a traves del API utiliza
 	-Test Automation
 	-Gradle 
 	-KARATE
+5. Alojamiento de reportes
+   La ruta donde se encuentran alojados los reportes es:
+   Test_API_KARATE/build/karate-reports/
+Aqui se guardan algunos reportes y podemos verlos mediante
+ le damos click derecho sobre el archivo y escogemos la opción Open in/Browser/Chrome
